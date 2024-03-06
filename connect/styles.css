@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(./5.jpeg);
+    background-image: url(./assets/9.jpg);
     margin: 0;
     padding: 0;
     background-size: cover; /* Cover the entire viewport */
@@ -10,7 +10,7 @@ body {
 .container {
     max-width: 600px;
     margin: 50px auto;
-    background-image: url(./9.jpg);
+    background-image: url(./assets/9.jpg);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
