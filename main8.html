@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .navbar-logo {
+            font-size: 20px;
+            text-decoration: none;
+            color: #fff;
+            margin-right: 20px; /* Adjusted margin */
+        }
+        .navbar1-logo {
+            margin-left: -570px; /* Adjusted margin */
+        }
+    
+        .navbar-icons {
+            display: flex;
+        }
+    
+        .navbar-icons a {
+            margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* Added style for the label */
+        label {
+            font-size: 18px; /* Adjust the font size as needed */
+            color: #fff; /* Text color */
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body style="background-image: url(./Designer2.jpeg);">
+    <!-- Navbar -->
+    <div class="navbar">
+        <img src="./Designer1.png" alt="Logo" class="navbar-logo" height="50" width="60">
+        <img src="./run.jpeg" alt="Logo1" class="navbar1-logo" height="50" width="60">
+        
+        <a href="#" class="navbar-logo" text-align="center">QR Code Generator</a>
+        <div class="navbar-icons">
+            <!-- Replace "#" with actual links to your social media profiles -->
+            <a href="#"><ion-icon name="logo-HTML5"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-CSS3"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-JAVASCRIPT"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-PYTHON"></ion-icon> </a>
+            <a href="#"><ion-icon name="logo-CHROME"></ion-icon> </a>
+            <a href="#"><ion-icon name="logo-AMAZON"></ion-icon> </a>
+            <a href="#"><ion-icon name="logo-APPLE"></ion-icon> </a>
+        </div>
+    </div>
+    <header style="background-color: #ffffff; padding: 20px; margin-bottom: 20px; position: relative;">
+        <img src="./1.png" alt="Your Photo" style="position: absolute; top: 200px; right: 50px; width: 250px; height: 290px;">
+    </header>
+    <header style="padding: 20px; margin-bottom: 20px; position: relative;">
+        <img src="./2.png" alt="Your Photo" style="position: absolute; top: 200px; left: 50px; width: 250px; height: 290px;">
+    </header>
+    <div class="container">
+        <div class="form">
+            <div class="button-group">
+            </div>
+            <br><br>
+            <!-- Updated label style -->
+            <label for="data" style="color: white;text-shadow: 2px 2px 5px red;size:100px"><b>Enter SMS Text:</b></label>
+            <br>
+            <input type="text" id="data" placeholder="Enter SMS Text">
+            <br><br>
+            <button onclick="generateAndRedirect()">Generate QR Code</button>
+        </div>
+        <div id="qr-code"></div>
+    </div>
+
+    <script>
+        function generateAndRedirect() {
+            var smsText = document.getElementById('data').value;
+            
+            // Validate if the SMS text is not empty
+            if (smsText.trim() === '') {
+                alert('Please enter SMS text.');
+                return;
+            }
+            
+            // For demonstration purposes, redirect to another page with the SMS text parameter
+            window.location.href = "nextpage7.html?sms=" + encodeURIComponent(smsText);
+        }
+    </script>
+</body>
+</html>
