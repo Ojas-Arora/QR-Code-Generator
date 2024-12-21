@@ -1,5 +1,7 @@
 # QR Code Generator
 
+![6](https://github.com/user-attachments/assets/903f47c8-a9ff-4c97-94ed-332f5d0fb278)
+
 **I. 🛠 Overview**
 
 QR Code Generator is a dynamic web application that allows users to generate customized QR codes for various purposes, such as URLs, PDFs, contacts, emails, and more. It provides an intuitive interface with multiple features, including color and size customization, social media sharing, and QR code scanning functionality.
