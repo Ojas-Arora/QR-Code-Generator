@@ -28,3 +28,20 @@ QR Code Generator is a dynamic web application that allows users to generate cus
 
 - 🐍Python
 
+**🛠IV. Setup Instructions**
+
+*1. 📥Clone the Repository:*
+
+git clone https://github.com/Ojas-Arora/QR-Code-Generator.git
+
+*2.📂 Navigate to the Project Directory:*
+
+cd QR-Code-Generator
+
+*3.🌐 Open in Browser:*
+
+Open index.html in any modern web browser to start the application.
+
+**V. 🌟Live Demo**
+
+Check out the live version here: [QR-Code-Generator](https://qr-code-generator-snowy.vercel.app/)
